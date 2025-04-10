@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js"
+    "dev": "webpack serve --config webpack.dev.js",
+    "lint": "eslint src/",
+    "format": "prettier src/ --write"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,12 @@
   },
   "homepage": "https://github.com/jmnjung/odin-todo-list#readme",
   "devDependencies": {
+    "@eslint/js": "^9.24.0",
     "css-loader": "^7.1.2",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
     "html-webpack-plugin": "^5.6.3",
+    "prettier": "3.5.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.5",
     "webpack-cli": "^6.0.1",
